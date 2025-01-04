@@ -69,6 +69,7 @@ class Solution {
 
     return sol;
   }
+
   auto part2() -> int {
     int sol = 0;
     for (auto &report : this->data) {

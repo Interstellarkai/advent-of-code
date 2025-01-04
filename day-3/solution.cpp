@@ -39,6 +39,7 @@ class Solution {
 
     return sol;
   }
+
   auto part2() -> long long {
     long long sol = 0;
     std::vector<std::pair<int, std::string>> instructions;
