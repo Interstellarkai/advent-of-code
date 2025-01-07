@@ -12,15 +12,16 @@ function(day name)
 
     # Copy input files into the respective build directory
     file(GLOB inputs "${name}/*.txt")
-    foreach(input ${inputs})
+    foreach (input ${inputs})
         add_custom_command(
                 TARGET 2024-${name} PRE_BUILD
                 COMMAND ${CMAKE_COMMAND} -E copy ${input} $<TARGET_FILE_DIR:2024-${name}>
         )
-    endforeach()
+    endforeach ()
 endfunction()
 
 day(day-1)
 day(day-2)
 day(day-3)
 day(day-4)
+day(day-5)
